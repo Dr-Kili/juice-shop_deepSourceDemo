@@ -1,0 +1,17 @@
+version = 1
+
+exclude_patterns = [
+  "node_modules/**",
+  "frontend/dist/**",
+  "build/**"
+]
+
+[[analyzers]]
+name = "javascript"
+
+  [analyzers.meta]
+  environment = ["nodejs", "browser"]
+  dialect = "typescript"
+
+[[analyzers]]
+name = "secrets"
